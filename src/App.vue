@@ -56,8 +56,8 @@ import ProfileCard from './components/ProfileCard.vue';
   class="flex flex-col xl:flex-row min-h-screen bg-[#161616] transition-all duration-1000 items-center xl:items-stretch ">
     <div class="bg-[#161616] w-1/6 flex flex-col justify-between min-w-[300px] max-w-[800px] ml-8">
       <div class="bg-[#161616] sticky top-0">
-        <div class="rounded-3xl border-solid border-gray-800 border bg-[#161616] p-5 mt-10 ">
-          <div class="bg-orange-500 border rounded-md">ASDS</div>
+          <div class="rounded-3xl border-solid border-gray-800 border bg-[#161616] p-5 mt-10 transition-transform duration-1000 ease-in-out" :style="{transform: `translateY(${profileMoveToPos}px)`, transition: `transform ${profileMoveDurationSec}s ease-in-out`,}">
+          <div class="absolute -inset-px bg-gradient-to-r from-[#0e0e0e] via-[#0e0e0e] to-[#0e0e0e] rounded-xl blur-lg -z-20 translate-y-5"></div>
           <header class="mb-10">
             <div class="flex justify-center mb-4">
               <img src="./assets/profilephoto.JPG" alt="Profile" class="profile-photo rounded-full size-36" />
@@ -84,6 +84,7 @@ import ProfileCard from './components/ProfileCard.vue';
         
       </div>
     </div>
+    <div class="absolute -inset-px bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#ffffff] rounded-xl blur-lg -z-20 translate-y-5"></div>
     <div class="bg-green-700 w-4/6 xl:ml-[5%] w-full min-h-screen min-w-[500px] max-w-[700px] pt-[5%]">
       <main class="bg-green-400">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
@@ -122,20 +123,42 @@ export default {
   data() {
     return {
       isScrolled: false,
+      scrollDirection: 'stopScroll',
+      scrollTimeout: null,
+      lastScrollTop: 0,
+      profileMoveToPos: 0,
+      profileMoveDurationSec: 1.0,
     };
   },
   methods: {
     handleScroll() {
-      // Check if the scroll position is greater than 500px
-      this.isScrolled = window.scrollY > 10;
+      clearTimeout(this.scrollTimeout);
+
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      if (scrollTop > this.lastScrollTop) {
+        this.scrollDirection = 'down';
+        this.profileMoveToPos = -7;
+        this.profileMoveDurationSec = 0.5;
+      } else if (scrollTop < this.lastScrollTop) {
+        this.scrollDirection = 'up'; 
+        this.profileMoveToPos = 7;
+        this.profileMoveDurationSec = 0.5;
+      }
+
+      this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+
+      this.scrollTimeout = setTimeout(() => {
+        this.scrollDirection = 'stopScroll';
+        this.profileMoveToPos = 0;
+        this.profileMoveDurationSec = 1.0;
+      }, 200);
     },
   },
   mounted() {
-    // Attach the scroll event listener when the component is mounted
     window.addEventListener("scroll", this.handleScroll);
   },
   beforeDestroy() {
-    // Remove the scroll event listener when the component is destroyed
     window.removeEventListener("scroll", this.handleScroll);
   },
 };
