@@ -91,8 +91,12 @@ button:focus-visible {
   @apply text-gray-400 hover:text-white hover:scale-110 hover:rotate-6 hover:animate-hoverLoop transition-all duration-300 ease-in-out;
 }
 
-.text-gray-hover-white:hover {
+.hover-border:hover {
   animation: hoverLoopStart 0.3s ease-in-out, hoverLoop 1s 0.3s infinite;
+}
+
+.hover-border:not(:hover) {
+  animation: hoverLoopEnd 0.5s ease-out;
 }
 
 @keyframes hoverLoopStart {
@@ -102,4 +106,19 @@ button:focus-visible {
   100% {
     transform: scale(1.1) rotate(6deg);
   }
+}
+
+@keyframes hoverLoopEnd {
+  0% {
+    transform: scale(1.1) rotate(6deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+
+.profileBackground{
+  -webkit-mask-image: linear-gradient(rgb(0 0 0 / 1),rgb(0 0 0 / 0.0),rgb(0 0 0 / 0));
+  mask-image: linear-gradient(rgb(0 0 0 / 1),rgb(0 0 0 / 0.0),rgb(0 0 0 / 0));
 }
