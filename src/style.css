@@ -88,7 +88,7 @@ button:focus-visible {
 }
 
 .text-gray-hover-white{
-  @apply text-gray-400 hover:text-white hover:scale-110 hover:rotate-6 hover:animate-hoverLoop transition-all duration-300 ease-in-out;
+  @apply text-gray-500 hover:text-white hover:scale-110  hover:animate-hoverLoop transition-all duration-300 ease-in-out;
 }
 
 .hover-border:hover {
@@ -104,13 +104,13 @@ button:focus-visible {
     transform: scale(1) rotate(0deg);
   }
   100% {
-    transform: scale(1.1) rotate(6deg);
+    transform: scale(1.1) rotate(0deg);
   }
 }
 
 @keyframes hoverLoopEnd {
   0% {
-    transform: scale(1.1) rotate(6deg);
+    transform: scale(1.1) rotate(0deg);
   }
   100% {
     transform: scale(1) rotate(0deg);

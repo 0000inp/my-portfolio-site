@@ -11,9 +11,9 @@ export default {
       },
       keyframes: {
         hoverLoop: {
-          '0%': { transform: 'translateX(0) scale(1.1) rotate(6deg)' },
-          '50%': { transform: 'translateY(1px) scale(1.1) rotate(6deg)' },
-          '100%': { transform: 'translateX(0) scale(1.1) rotate(6deg)' },
+          '0%': { transform: 'translateX(0) scale(1.1) ' },
+          '50%': { transform: 'translateY(1px) scale(1.1) ' },
+          '100%': { transform: 'translateX(0) scale(1.1) ' },
         },
       },
     },
