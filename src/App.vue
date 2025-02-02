@@ -1,45 +1,69 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import ProfileCard from './components/ProfileCard.vue';
+import ProjectCard from './components/ProjectCard.vue';
 </script>
 
 <!-- bg-[url('./assets/testbg.webp')] -->
  
 <template>
-  <div
-  :class="true ? 'flex flex-col xl:flex-row min-h-screen bg-[#161616]' : 'flex flex-col xl:flex-col min-h-screen bg-blue-700'" 
-  class="flex flex-col xl:flex-row min-h-screen bg-[url('./assets/testbg.webp')] transition-all duration-1000 items-center xl:items-stretch ">
-    <ProfileCard></ProfileCard>
-    <div class=" w-4/6 xl:ml-[5%] w-full min-h-screen min-w-[500px] max-w-[700px] pt-[3%] pb-[3%]">
-      <main class="bg-green-400 p-10 rounded-3xl">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
-      </main>
-    </div>
-  </div>
+	<div
+	:class="true ? 'flex flex-col xl:flex-row min-h-screen bg-[#161616]' : 'flex flex-col xl:flex-col min-h-screen bg-blue-700'" 
+	class="flex flex-col xl:flex-row min-h-screen bg-[url('./assets/testbg.webp')] transition-all duration-1000 items-center xl:items-stretch ">
+	<ProfileCard></ProfileCard>
+	<div class=" w-4/6 xl:ml-[5%] w-full min-h-screen min-w-[500px] max-w-[700px] pt-[3%] pb-[3%]">
+		<main class="bg-gray-800 p-8 rounded-3xl">
+		<h1 class="text-center text-4xl mb-5 font-mono font-bold tracking-widest">Showreel</h1>
+		
+		<vue-plyr class="">
+			<div class="plyr__video-embed" id="player">
+			<iframe
+				src="https://www.youtube.com/embed/WO2b03Zdu4Q"
+				allowfullscreen
+				allowtransparency
+				allow="autoplay"
+			></iframe>
+			</div>
+		</vue-plyr>
+
+		<hr class="w-56 h-0.5 mx-auto my-5 bg-gray-100 border-0 md:my-10 dark:bg-gray-700">
+		
+		<h1 class="text-center text-4xl mb-5 font-mono font-bold tracking-widest">Projects</h1>
+
+		<div class="flex flex-col items-center">
+			<ProjectCard image="testbg.webp" title="Emergency Call" desc="LoremasdakmkasdpjwaijdmLoremasdakmkasdpjwaijdmAAAAAAAAAAADDDDDDDDDDDDDDFFFFFFFFFFFFFFFFFFFF/"></ProjectCard>
+			<ProjectCard image="snowing.gif" title="Red Sea" desc="Loremasdakmkasdpjwaijdm"></ProjectCard>
+			<ProjectCard image="profilephoto.JPG" title="Nightmare Labyrynth" desc="Loremasdakmkasdpjwaijdm"></ProjectCard>
+		</div>
+		
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam corporis atque cupiditate enim, praesentium magnam incidunt, eaque ratione soluta vitae fuga vero ab accusamus? In tenetur eius consequuntur id expedita.</p>
+		</main>
+	</div>
+	</div>
 </template>
 
 <script>

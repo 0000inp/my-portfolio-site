@@ -31,6 +31,7 @@ body {
   place-items: center;
   min-width: 320px; */
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 button:hover {
@@ -121,4 +122,9 @@ button:focus-visible {
 .profileBackground{
   -webkit-mask-image: linear-gradient(rgb(0 0 0 / 1),rgb(0 0 0 / 0.0),rgb(0 0 0 / 0));
   mask-image: linear-gradient(rgb(0 0 0 / 1),rgb(0 0 0 / 0.0),rgb(0 0 0 / 0));
+}
+
+.projectThumbnail {
+  -webkit-mask-image: linear-gradient(to right, rgb(0 0 0 / 1), rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.3), rgb(0 0 0 / 0));
+  mask-image: linear-gradient(to right, rgb(0 0 0 / 1), rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.3), rgb(0 0 0 / 0));
 }

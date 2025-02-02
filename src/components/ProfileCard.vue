@@ -6,7 +6,7 @@ import { ref } from 'vue'
 <template>
   <div class=" w-1/6 flex flex-col justify-between min-w-[300px] max-w-[800px] ml-8">
       <div class=" sticky top-0">
-          <div class="rounded-3xl border-solid border-gray-800 border bg-[#492e12] p-5 mt-10" :style="{transform: `translateY(${profileMoveToPos}px)`, transition: `transform ${profileMoveDurationSec}s ease-in-out`,}">
+          <div class="rounded-3xl border-solid border-gray-800 border bg-[#373a2f] p-5 mt-10" :style="{transform: `translateY(${profileMoveToPos}px)`, transition: `transform ${profileMoveDurationSec}s ease-in-out`,}">
           <div class="absolute -inset-px bg-gradient-to-r from-[#0e0e0e] via-[#0e0e0e] to-[#0e0e0e] rounded-xl blur-lg -z-20 translate-y-5"></div>
           <img src="../assets/snowing.gif" alt="" class="profileBackground absolute inset-0 w-full h-full object-cover rounded-3xl -z-10 opacity-40" />
           <header class="mb-10">
