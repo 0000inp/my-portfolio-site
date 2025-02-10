@@ -42,7 +42,7 @@ import VCodeBlock from '@wdns/vue-code-block';
       <h3><strong class="font-semibold">Sonar system </strong>
         <span class="opacity-70">that can detect nearby enemy when sonar hit</span>
       </h3>
-      <video src="../../assets/Project/Red Sea/radar.mov" class="" autoplay loop muted disablePictureInPicture></video>
+      <video src="../../assets/Project/Red Sea/radar.mp4" class="" autoplay loop muted disablePictureInPicture></video>
     </div>
     
 
@@ -50,11 +50,11 @@ import VCodeBlock from '@wdns/vue-code-block';
       <h3><strong class="font-semibold">Fish simulation </strong>
         <span class="opacity-70">using boids algorithm to simulate fish flock behavior, avoid collision and follow target</span>
       </h3>
-      <video src="../../assets/Project/Red Sea/fish.mov" class="" autoplay loop muted disablePictureInPicture></video>
+      <video src="../../assets/Project/Red Sea/fish.mp4" class="" autoplay loop muted disablePictureInPicture></video>
       <VCodeBlock class="text-[10px]" maxHeight="500"
         :code="code"
         highlightjs
-        label="Code"
+        label=""
         lang="c++"
         theme="neon-bunny"
       />
