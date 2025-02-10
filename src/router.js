@@ -5,9 +5,9 @@ import NightmareLabyrinthDetail from './components/ProjectDetail/NightmareLabyri
 
 
 const routes = [
-  { path: '/my-portfolio-site/emergency-call', component: EmergencyCallDetail },
-  { path: '/my-portfolio-site/red-sea', component: RedSeaDetail },
-  { path: '/my-portfolio-site/nightmare-labyrinth', component: NightmareLabyrinthDetail },
+  { path: '/portfolio/emergency-call', component: EmergencyCallDetail },
+  { path: '/portfolio/red-sea', component: RedSeaDetail },
+  { path: '/portfolio/nightmare-labyrinth', component: NightmareLabyrinthDetail },
 ]
 
 const router = createRouter({
