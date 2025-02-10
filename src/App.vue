@@ -28,7 +28,7 @@ import ProjectCard from './components/ProjectCard.vue';
 
 			<div class="flex flex-col items-center mb-10 ">
 				<ProjectCard media="emergency-call-preview.mov" title="Emergency Call" desc="Bodycam horror game I solo-developed as a personal project to study Unreal Engine 5"></ProjectCard>
-				<ProjectCard media="red-sea-preview.mov" title="Red Sea" desc="Submarine horror game made by team of 2 people as a graduation project using Unreal Engine 5"></ProjectCard>
+				<ProjectCard media="red-sea-preview.mp4" title="Red Sea" desc="Submarine horror game made by team of 2 people as a graduation project using Unreal Engine 5"></ProjectCard>
 				<ProjectCard media="nightmare-labyrinth-preview.mov" title="Nightmare Labyrinth" desc="Maze horror game made by team of 3 people as a game development course project using Godot 3"></ProjectCard>
 				<!--<a class="text-xl text-white opacity-50 hover:opacity-100 hover:text-white transition-all duration-500"> < More > </a>-->
 			</div>
